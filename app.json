@@ -1,3 +1,4 @@
+
 {
   "expo": {
     "name": "TodoApp",
@@ -8,9 +9,11 @@
     "scheme": "todoapp",
     "userInterfaceStyle": "automatic",
     "ios": {
+      "bundleIdentifier": "com.misfah.todoapp",
       "icon": "./assets/expo.icon"
     },
     "android": {
+      "package": "com.misfah.todoapp",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -31,6 +34,18 @@
           "backgroundColor": "#208AEF",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow TodoApp to use your location to show your position on the map."
+        }
+      ],
+      [
+        "react-native-maps",
+        {
+          "androidGoogleMapsApiKey": "YOUR_ANDROID_GOOGLE_MAPS_API_KEY"
         }
       ]
     ],
